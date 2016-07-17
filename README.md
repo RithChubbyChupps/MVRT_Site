@@ -1,20 +1,24 @@
-###MVRT WEBSITE
+# mvrt-website
 
-#The fancy new website of the Monta Vista Robotics Team
+MVRT's snazzy new website.
 
-To initialize this website, you need to install the following tools:
-<a href="https://www.python.org/downloads/">PYTHON</a>
-<a href="https://nodejs.org/en/download/">NODE.JS<a>
-<a href="https://www.ruby-lang.org/en/downloads/">RUBY</a>
-OS X and other Unix machines generally come with Ruby and Python, but make sure
-that you have the latest version by using ```python -v``` and ```ruby -v```
+## Requirements
 
-Then run the following command to clone the repository:
-```git clone https://github.com/mvrt-115/MVRT_Site```
-And navigate to the repository in the Command Line.
+ + NodeJS
+ + Gulp ``npm install -g gulp``
+ + Ruby
+ + Bundler ``gem install bundler``
+ + Bower ``npm install -g bower``
 
-Then run the following command for Linux (Including Mac):
-```./mac-init.sh```
+## Installation
 
-Or this command for Windows:
-```./windows-init.sh```
+```bash
+$ git clone <git url>
+$ bundle install && npm install && bower install
+$ gulp
+```
+## Hacking ##
+
+```bash
+$ gulp serve
+```

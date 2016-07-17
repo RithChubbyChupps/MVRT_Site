@@ -4,16 +4,15 @@
 # 3. config.yml
 
 name: mvrt-website
-description: MVRTs snazzy new website.
+description: MVRT's snazzy new website.
 
-source: app/
 # Gulp handles images and assets.
-exclude: ['images', 'css', 'js', 'fonts',
+exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
 
 include: ['.htaccess', 'favicon.ico']
 
-keep_files: ['images']
+keep_files: ['img']
 
 # _config.build.yml sets future and show_drafts to false on `gulp dist`
 future: true
@@ -30,6 +29,7 @@ paginate: 5
 paginate_path: "blog/page:num/"
 highlighter: rouge
 
+permalink: /blog/:year/:month/:day/:title/
 
 defaults:
   -
@@ -49,3 +49,5 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+permalink: /blog/:year/:month/:day/:title/
